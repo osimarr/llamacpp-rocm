@@ -982,7 +982,7 @@ jobs:
     - name: Generate release tag
       id: generate-tag
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
       run: |
         # Get all existing release tags that match the pattern b####
         existing_tags=$(gh release list --limit 1000 --json tagName --jq '.[].tagName' | grep -E '^b[0-9]{4}$' | sort -V || echo "")
