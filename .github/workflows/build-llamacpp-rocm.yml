@@ -730,7 +730,7 @@ jobs:
           -DGGML_HIP_ROCWMMA_FATTN=OFF \
           -DLLAMA_BUILD_BORINGSSL=ON \
           -DGGML_LTO=ON \
-          -DGGML_HIP_NO_VMM=OFF \
+          -DGGML_HIP_NO_VMM=ON \
           -DGGML_NATIVE=OFF \
           -DGGML_STATIC=OFF \
           -DCMAKE_SYSTEM_NAME=Linux
