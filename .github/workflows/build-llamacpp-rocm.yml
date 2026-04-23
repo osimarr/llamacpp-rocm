@@ -724,13 +724,13 @@ jobs:
           -DBUILD_SHARED_LIBS=ON \
           -DLLAMA_BUILD_TESTS=OFF \
           -DGGML_HIP=ON \
-          -DGGML_OPENMP=OFF \
+          # -DGGML_OPENMP=OFF \
           -DGGML_CUDA_FORCE_CUBLAS=OFF \
           -DGGML_RPC=ON \
           -DGGML_HIP_ROCWMMA_FATTN=OFF \
           -DLLAMA_BUILD_BORINGSSL=ON \
           -DGGML_LTO=ON \
-          -DGGML_HIP_NO_VMM=ON \
+          # -DGGML_HIP_NO_VMM=ON \
           -DGGML_NATIVE=OFF \
           -DGGML_STATIC=OFF \
           -DCMAKE_SYSTEM_NAME=Linux
